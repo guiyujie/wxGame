@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "5280a46b-457e-4728-81c6-010b4f025f67",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "hitman1_gun": {
+      "ver": "1.0.3",
+      "uuid": "6dd4be83-9d12-4611-8971-147cf75423d1",
+      "rawTextureUuid": "5280a46b-457e-4728-81c6-010b4f025f67",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 49,
+      "height": 43,
+      "rawWidth": 49,
+      "rawHeight": 43,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
