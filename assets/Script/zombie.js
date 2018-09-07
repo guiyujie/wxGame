@@ -7,8 +7,7 @@ cc.Class({
     properties: {
         //出生位置
         brithPos:{
-            x:0,
-            y:0
+            default:null
         },
         //目标
         target:{
@@ -100,5 +99,9 @@ cc.Class({
           
         }
 
+    },
+    //碰撞产生
+    onCollisionEnter: function (other, self) {
+        //this.acttack
     }
 });

@@ -34,7 +34,9 @@ cc.Class({
     onLoad () {
         
        window.Main = this;
-      
+       //开启碰撞检测
+       var manager = cc.director.getCollisionManager();
+        manager.enabled = true;
         //  获取屏幕尺寸
     },
 

@@ -23,7 +23,9 @@ cc.Class({
         var person = this.node.getChildByName("person");
      
         var deg = utils.dg(pos,po1);
-
+        
+        //设置层级
+        this.node.zIndex = 1000;
 
        // cc.log("自定义旋转角度: ",deg);
 
@@ -80,4 +82,16 @@ cc.Class({
     update (dt) {
 
     },
+    //碰撞产生
+    onCollisionEnter: function (other, self) {
+        this.life-=1;
+    },
+    //碰撞持续
+    onCollisionStay: function (other, self) {
+        console.log('on collision stay');
+    },
+    //结束
+    onCollisionExit: function (other, self) {
+        console.log('on collision exit');
+    }
 });
