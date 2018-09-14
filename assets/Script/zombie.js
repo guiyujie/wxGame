@@ -14,8 +14,9 @@ cc.Class({
             default:null,
             type:cc.Node
         },
+        thinkTime:0.3, //思考时间,
         rotateSpeed:0.4, //转身速度
-        moveSpeed:200, //移动速度
+        moveSpeed:100, //移动速度
         visualRange:300,//视野范围  
         hatredRange: 100, //仇恨范围
         attackRange:10,//攻击范围  
@@ -77,15 +78,16 @@ cc.Class({
     //攻击 进入仇恨范围的逻辑
     attack (){
         var tPos = this.target.getPosition();
-        //if(tPos.)
+       
     },
     onLoad () {
-      
+        
     },
 
     start () {
        //记录出生位置
        this.brithPos = this.node.getPosition();
+       
        //开始巡逻
        this.patrol();
     },
@@ -103,5 +105,6 @@ cc.Class({
     //碰撞产生
     onCollisionEnter: function (other, self) {
         //this.acttack
+        //console.log(other);
     }
 });

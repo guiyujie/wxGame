@@ -8,16 +8,35 @@
   },
   "collision-matrix": [
     [
+      false,
+      false,
+      false,
       false
     ],
     [
+      false,
+      false,
+      true,
+      false
+    ],
+    [
+      false,
+      true,
       false,
       false,
       true
     ],
     [
       false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
       true,
+      false,
       false
     ]
   ],
@@ -29,7 +48,9 @@
   "group-list": [
     "default",
     "player",
-    "zombie"
+    "zombie",
+    "barrier",
+    "bullet"
   ],
   "simulator-orientation": false,
   "simulator-resolution": {
@@ -37,5 +58,6 @@
     "width": 960
   },
   "use-customize-simulator": false,
-  "use-project-simulator-setting": false
+  "use-project-simulator-setting": false,
+  "start-scene": "current"
 }
