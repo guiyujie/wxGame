@@ -65,6 +65,10 @@ cc.Class({
         });
         //添加zombie组件
         var com = node.addComponent("zombie");
+        //此处可初始化各种数值
+        com.life=1;
+        //手动调用一下初始化
+        com.init();
         //随机初始化出身位置
         var x = utils.random(com.visualRange-this.node.width/2,this.node.width/2-com.visualRange);
         var y = utils.random(com.visualRange-this.node.height/2,this.node.height/2-com.visualRange);

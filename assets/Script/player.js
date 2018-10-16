@@ -104,11 +104,12 @@ cc.Class({
     shoot(dist){
         var t=this; 
         var pos = this.node.getPosition();
-        console.log(this.cd);
         if(this.cd) return false;
         //发射子弹
         var node = cc.instantiate(this.bullet);
+    
         node.parent = this.node.parent; 
+        node.attr({name:"bullet"});//设置名称
         node.setPosition(pos);
         node.getComponent("bullet").init(dist)
         //定时器

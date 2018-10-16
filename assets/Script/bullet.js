@@ -34,6 +34,7 @@ cc.Class({
         this.node.y += this.vec2.y * this.moveSpeed *dt;
         //屏幕外销毁
         if(this.node.x<-window.MapInfo.width/2 || this.node.x>window.MapInfo.width/2 || this.node.y<-window.MapInfo.height/2 || this.node.y>window.MapInfo.height/2){
+            //console.log("destroy");
             this.node.destroy();
         }
     },

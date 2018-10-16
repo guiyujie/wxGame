@@ -28,8 +28,8 @@ cc.Class({
        //开启碰撞检测
        var manager = cc.director.getCollisionManager();
        manager.enabled = true;
-        manager.enabledDebugDraw = true;
-        //manager.enabledDrawBoundingBox = true;
+       // manager.enabledDebugDraw = true;
+       //manager.enabledDrawBoundingBox = true;
     },
 
     start () {

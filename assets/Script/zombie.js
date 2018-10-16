@@ -14,6 +14,11 @@ cc.Class({
             default:null,
             type:cc.Node
         },
+         //状态
+        status:{
+            default:null,
+            type:cc.Node
+        },
         thinkTime:0.3, //思考时间,
         rotateSpeed:0.4, //转身速度
         moveSpeed:100, //移动速度
@@ -21,9 +26,17 @@ cc.Class({
         hatredRange: 100, //仇恨范围
         attackRange:10,//攻击范围  
         attackInterval:1, // 1秒攻击间隔
+        maxLife:10, //最大生命值
         life:10, //生命值 10点
     },
-
+    //开始时执行一次
+    init() {
+        //设置status状态条
+        this.status = this.node.getChildByName("status");
+        //生命条
+        this.lifeStatus =this.status.getComponent(cc.ProgressBar);
+        //console.log("test");
+    },
     //巡逻 视野范围内无敌人时的逻辑
     patrol (){
 
@@ -102,9 +115,22 @@ cc.Class({
         }
 
     },
+    //死亡
+    dead(){
+        this.node.destroy();
+    },
     //碰撞产生
     onCollisionEnter: function (other, self) {
         //this.acttack
-        //console.log(other);
+        //被子弹击中
+        if(other.node.name=="bullet"){
+            this.life -= 1;
+            if(this.life>0){
+                this.lifeStatus.progress = this.life/this.maxLife
+            }else{
+                this.dead();
+            }
+        }
+        
     }
 });

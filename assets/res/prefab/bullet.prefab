@@ -53,7 +53,7 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": -1558,
-      "y": 1714,
+      "y": 1715,
       "z": 0
     },
     "_scale": {
@@ -74,7 +74,7 @@
     "_skewX": 0,
     "_skewY": 0,
     "_zIndex": 0,
-    "groupIndex": 0,
+    "groupIndex": 4,
     "_id": ""
   },
   {
@@ -103,7 +103,7 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": null,
-    "_id": "a7rjsfj/hBNYvN1mMrk581"
+    "_id": "adNf85YkZD85UgkzTTMkzN"
   },
   {
     "__type__": "cc.BoxCollider",
@@ -124,7 +124,7 @@
       "width": 8,
       "height": 8
     },
-    "_id": "1cXRuMHFtEe7vL++4Nik96"
+    "_id": "eb+oqJF2pJGr+qd4sgFRQp"
   },
   {
     "__type__": "14083wJBlpNj5KZ8g2f9AW2",
@@ -137,7 +137,7 @@
     "vec2": null,
     "moveSpeed": 500,
     "moveRange": 300,
-    "_id": "d3oMwtZbVMpKpfI8hZg5YF"
+    "_id": "30n1JnzY5CfLfQbkBDBqS+"
   },
   {
     "__type__": "cc.PrefabInfo",
